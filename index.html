@@ -1,11 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Segurança Digital para Idosos</title>
-</head>
-<body>
-    
-</body>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Projeto sobre UX e acessibilidade, com foco em interfaces inclusivas e boas práticas de usabilidade."
+    />
+    <title>UX e Acessibilidade</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo</a>
+
+    <header class="topo">
+      <div class="container topo__content">
+        <a class="brand" href="#" aria-label="Início do projeto">
+          <span class="brand__icon" aria-hidden="true">♿</span>
+          <span>UX e Acessibilidade</span>
+        </a>
+
+        <nav class="menu" aria-label="Navegação principal">
+          <a href="#principios">Princípios</a>
+          <a href="#praticas">Práticas</a>
+          <a href="#checklist">Checklist</a>
+          <a href="#recursos">Recursos</a>
+        </nav>
+
+        <div class="toolbar" aria-label="Ferramentas de acessibilidade">
+          <button id="toggle-contrast" type="button" aria-pressed="false">
+            Ativar contraste alto
+          </button>
+          <button id="toggle-font" type="button" aria-pressed="false">
+            Aumentar fonte
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="conteudo-principal">
+      <section class="hero">
+        <div class="container hero__grid">
+          <div>
+            <p class="eyebrow">Projeto de estudo</p>
+            <h1>UX e acessibilidade: desenvolvendo interfaces inclusivas</h1>
+            <p class="hero__text">
+              Uma experiência digital deve ser compreensível, utilizável e acolhedora para todas as pessoas.
+              Aqui, você encontra conceitos essenciais para criar produtos mais intuitivos e acessíveis.
+            </p>
+            <a class="button button--primary" href="#principios">Ver princípios</a>
+          </div>
+
+          <aside class="hero__card" aria-label="Resumo do projeto">
+            <h2>O que este projeto explora</h2>
+            <ul>
+              <li>Contraste e legibilidade</li>
+              <li>Estrutura semântica</li>
+              <li>Legibilidade para teclado</li>
+              <li>Feedback claro e inclusivo</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section id="principios" class="section">
+        <div class="container">
+          <h2>Princípios centrais</h2>
+          <div class="cards">
+            <article class="card">
+              <h3>Perceptibilidade</h3>
+              <p>As informações devem ser apresentadas de forma que todas as pessoas consigam percebê-las.</p>
+            </article>
+            <article class="card">
+              <h3>Operabilidade</h3>
+              <p>Os recursos devem ser fáceis de usar, inclusive por quem navega sem mouse.</p>
+            </article>
+            <article class="card">
+              <h3>Compreensibilidade</h3>
+              <p>A interface precisa ser clara, previsível e objetiva em cada interação.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="praticas" class="section section--alt">
+        <div class="container">
+          <h2>Práticas recomendadas</h2>
+          <div class="practice-list">
+            <div class="practice-item">
+              <h3>Hierarquia visual</h3>
+              <p>Títulos, subtítulos e espaçamento bem organizados facilitam a leitura e a escaneabilidade.</p>
+            </div>
+            <div class="practice-item">
+              <h3>Rótulos claros</h3>
+              <p>Botões, links e formulários com textos explícitos tornam a navegação mais confiável.</p>
+            </div>
+            <div class="practice-item">
+              <h3>Feedback acessível</h3>
+              <p>Mensagens de erro e sucesso devem ser percebidas sem depender apenas de cores.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="checklist" class="section">
+        <div class="container">
+          <h2>Checklist rápido</h2>
+          <ul class="checklist">
+            <li><span aria-hidden="true">✓</span> Texto com contraste suficiente</li>
+            <li><span aria-hidden="true">✓</span> Estrutura com títulos bem definidos</li>
+            <li><span aria-hidden="true">✓</span> Navegação possível por teclado</li>
+            <li><span aria-hidden="true">✓</span> Links e botões com rótulos claros</li>
+            <li><span aria-hidden="true">✓</span> Conteúdo sem depender apenas de cor</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="recursos" class="section section--alt">
+        <div class="container">
+          <h2>Recursos para continuar</h2>
+          <ul class="resources">
+            <li>
+              <a href="https://www.w3.org/WAI/WCAG21/quickref/" target="_blank" rel="noreferrer">
+                WCAG Quick Reference
+              </a>
+            </li>
+            <li>
+              <a href="https://www.w3.org/WAI/fundamentals/accessibility-principles/" target="_blank" rel="noreferrer">
+                Princípios fundamentais de acessibilidade
+              </a>
+            </li>
+            <li>
+              <a href="https://www.nngroup.com/articles/" target="_blank" rel="noreferrer">
+                Nielsen Norman Group
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>Desenvolvido com foco em inclusão, clareza e experiência do usuário.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
